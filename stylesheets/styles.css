@@ -3,6 +3,7 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	height:100%;
+	overflow:hidden;
 	
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
@@ -15,6 +16,7 @@ html, body {
 	padding-right: 15em;
 	padding-top: 1em;
 	height:100%;
+	overflow:scroll;
 	
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
@@ -54,22 +56,22 @@ html, body {
 }
 
 .tabstrip{
-	background-color: #AAAAAA;
+	background-color: #FFFFFF;
 }
 
 .tab{
 	padding:10px;
 	background-color: #CCCCCC;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 	
 }
 
 .tab:hover{
-	background-color: #FFFFFF;
+	background-color: #DDDDDD;
 	cursor:pointer;
 }
 
@@ -245,19 +247,22 @@ input[type=checkbox]:checked ~ [for="show"] span:last-of-type {
 	height:100%;
 	margin-bottom:2em;
 	border:0;
+	overflow:auto;
 }
 
 #contentframe{
 	height:100%;
+	overflow: hidden;
 }
 
 iframe{
-	overflow:hidden;
+	overflow:auto;
 }
 
 .content{
 	height:100%;
 	padding: 1em;
+	overflow: auto;
 }
 
 @keyframes fadein {
