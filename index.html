@@ -7,17 +7,37 @@
 		<link rel="icon" type="image/jpg" href="crystalfruit.png">
 		<link rel="stylesheet" href="stylesheets/styles.css">
 		<link rel="stylesheet" href="stylesheets/animate.css">
+		<SCRIPT LANGUAGE="JavaScript">
+			function go(loc){
+				document.getElementById('frame').src = loc;
+			}
+		</script>
 	</head>
 
 	<body>
+        <script src="js/rAF.js"></script>
+        <script src="js/demo-2.js"></script>
+		
 		<div class="bodybox">
-			<div class="topbox">
+			<div class="topbox" onClick="location=''" style="cursor:pointer">
 				<p class="animated fadeInLeft">
-					<span style="font-size:20pt">hello world</span> <span style="color:red">></span> welcome to my web-page
+					<span onClick="window.open('http://i.imgur.com/7KY3rUC.png')" style="cursor:pointer"><img src="crystalfruit.png" width="25px" /></span> <span style="font-size:20pt">hello world</span> <span style="color:red;font-size:18pt">></span> welcome to my web page
+					<br>
+					<span style="font-size:8pt;color:#AAAAAA">website by john nguyen</span>
 				</p>
 			</div>
 			<div class="border1"></div>
-		
+			<div class="tabstrip">
+				<table style="width:100%">
+					<td class="tab" onClick="go('about.html')"><center>about me
+					<td class="tab" onClick="go('proj.html')"><center>current projects
+					<td class="tab" onClick="go('resume.html')"><center>resume
+				</table>
+			</div>
+			<div class="border1"></div>
+			<div id="contentframe">
+				<iframe id="frame" name="frame" class="frame" src="about.html" scrolling="no"></iframe>
+			</div>
 		</div>
 	</body>
 	
