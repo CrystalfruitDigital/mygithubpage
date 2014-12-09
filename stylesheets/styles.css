@@ -162,9 +162,10 @@ h2:hover{
 }
 
 #h4h{
-	background-image: url('http://i.imgur.com/PjETiwY.png');
-	height:100px;
-	width:100px;
+	background-image: url('http://tehjawn.github.io/h4h/iconprosmall.png');
+	height:150px;
+	width:150px;
+	margin-right:10px;
 	cursor: pointer;
 	-webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;
@@ -174,7 +175,7 @@ h2:hover{
 }
 
 #h4h:hover{
-	background-image: url('http://tehjawn.github.io/h4h/icon1.png');
+	background-image: url('http://tehjawn.github.io/h4h/icon1small.png');
 	opacity: .7;
 }
 
