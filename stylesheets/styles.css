@@ -179,6 +179,22 @@ h2:hover{
 	opacity: .7;
 }
 
+.grad1{
+	padding-left:1em;
+	background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	left bottom,
+	color-stop(0, #93A9BA),
+	color-stop(1, #F7F7EF)
+	);
+	background-image: -o-linear-gradient(left, #93A9BA 0%, #F7F7EF 100%);
+	background-image: -moz-linear-gradient(left, #93A9BA 0%, #F7F7EF 100%);
+	background-image: -webkit-linear-gradient(left, #93A9BA 0%, #F7F7EF 100%);
+	background-image: -ms-linear-gradient(left, #93A9BA 0%, #F7F7EF 100%);
+	background-image: linear-gradient(to left, #93A9BA 0%, #F7F7EF 100%);
+}
+
 #java{
 	background-image: url('http://png-4.findicons.com/files/icons/1008/quiet/256/java.png');
 	height:150px;
