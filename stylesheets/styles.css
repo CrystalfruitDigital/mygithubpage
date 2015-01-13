@@ -233,6 +233,26 @@ h2:hover{
 	opacity: .7;
 }
 
+#pennapps{
+	background-image: url('https://s3.amazonaws.com/challengepost/photos/production/challenge_thumbnails/000/196/878/datas/original.png?1420531890');
+	height:150px;
+	width:150px;
+	background-size: 150px;
+	cursor: pointer;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#pennapps:hover{
+	height:120px;
+	width:120px;
+	background-size: 120px;
+	opacity: .7;
+}
+
 #owl{
 	background-image: url('http://tehjawn.github.io/h4h/owl.png');
 	height:100px;
