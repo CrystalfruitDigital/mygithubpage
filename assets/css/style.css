@@ -1,4 +1,3 @@
-
 /*=============================================================
     Authour URL: www.designbootstrap.com
 
@@ -14,16 +13,66 @@
    
 ========================================================  */
 
+@keyframes fadein {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
+@-moz-keyframes fadein {
+    /* Firefox */
+    
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
 /*================================
     GENERAL STYLES
 ==================================*/
 
-@import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/* GOOGLE FREE FONTS */
 
+html,
 body {
     font-family: 'Segoe UI', 'Roboto', sans-serif;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    
+    -o-animation: fadein 2s;
+    /* Opera */
 }
 
 section {
@@ -42,71 +91,116 @@ section {
 /*================================
     NAVBAR STYLES
 ==================================*/
+
 .navbar-default {
     background-color: rgb(70, 120, 140);
     border-color: transparent;
     color: #fff;
 }
 
-    .navbar-default .navbar-nav > li > a {
-        color: #fff;
-    }
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
 
-    .navbar-default .navbar-nav > a:hover {
-        color: rgb(100, 250, 150);
-    }
+.navbar-default .navbar-nav > a:hover {
+    color: rgb(100, 250, 150);
+}
 
 .navbar-brand {
     padding: 0px;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
-    background-color:#fff;
+    background-color: #fff;
 }
 
-i{
-  -webkit-transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -o-transition: opacity .2s ease-in-out;
-  transition: opacity .2s ease-in-out;    
+i {
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
 }
 
-i:hover{
-    cursor: pointer;   
+i:hover {
+    cursor: pointer;
     opacity: .5;
+}
+
+.shadow {
+    margin-bottom: -10px;
+    padding: 5px;
+    width: 100%;
+    background-color: #2D4D5A;
+    -webkit-box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .15);
+    box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .15);
 }
 /*================================
     HOME SECTION STYLES
 ==================================*/
-
 /*STYLE OF BACKGROUND IMAGE*/
+
 #home {
-    background: url(../img/home.jpg) no-repeat center center; /*Full Witdth background image*/
+    background: url(../img/home.jpg) no-repeat center center;
+    /*Full Witdth background image*/
+    
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
     min-height: 600px;
 }
-    /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
-    #home .overlay {
-        padding-top: 90px;
-        background-color: rgba(70, 120, 140,.7); /*.75 opacity of the color so that background image is visible*/
-        min-height: 600px;
-        color: #fff;
-    }
+/*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
 
-    #home h1 {
-        padding-top: 80px;
-        font-weight: 900;
-        font-size: 100px;
-        font-family: 'Browallia New';
-    }
+#home .overlay {
+    padding-top: 90px;
+    background-color: rgba(70, 120, 140, .7);
+    /*.75 opacity of the color so that background image is visible*/
+    
+    min-height: 600px;
+    color: #fff;
+}
+
+#home h1 {
+    padding-top: 80px;
+    font-weight: 900;
+    font-size: 100px;
+    font-family: 'Segoe UI Light';
+}
 /*SMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
-
 /*CLASS TO FORMAT TEXT*/
+
 .p-cls {
     padding-top: 30px;
     padding-bottom: 40px;
+}
+
+#portfoliohome {
+    background: url(../img/5.jpg) no-repeat center center;
+    /*Full Witdth background image*/
+    
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    min-height: 600px;
+}
+/*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
+
+#portfoliohome .overlay {
+    padding-top: 90px;
+    background-color: rgba(70, 140, 140, .7);
+    /*.75 opacity of the color so that background image is visible*/
+    
+    min-height: 600px;
+    color: #fff;
+}
+
+#portfoliohome h1 {
+    padding-top: 80px;
+    font-weight: 900;
+    font-size: 100px;
+    font-family: 'Segoe UI Light';
 }
 
 /*======================================
@@ -114,7 +208,9 @@ i:hover{
 =========================================*/
 
 .parallax1 {
-    background: url(../img/pennapps.jpg) no-repeat center center; /* DEFINE IMAGE PATH CAREFULLY*/
+    background: url(../img/pennapps.jpg) no-repeat center center;
+    /* DEFINE IMAGE PATH CAREFULLY*/
+    
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -122,15 +218,21 @@ i:hover{
     background-attachment: fixed;
 }
 
-    .parallax1 .overlay {
-        min-height: 200px;
-        background: rgba(15, 60, 70,.75);
-        font-size: 40px;
-        padding-bottom: 60px;
-        padding-top: 60px;
-    }
+.parallax1 .overlay {
+    min-height: 200px;
+    background: rgba(15, 60, 70, .75);
+    font-size: 40px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    -moz-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+}
+
 .parallax2 {
-    background: url(../img/gh4h.jpg) no-repeat center center; /* DEFINE IMAGE PATH CAREFULLY*/
+    background: url(../img/gh4h.jpg) no-repeat center center;
+    /* DEFINE IMAGE PATH CAREFULLY*/
+    
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -138,16 +240,21 @@ i:hover{
     background-attachment: fixed;
 }
 
-    .parallax2 .overlay {
-        min-height: 200px;
-        background: rgba(15, 60, 70,.75);
-        font-size: 40px;
-        padding-bottom: 60px;
-        padding-top: 60px;
-    }
+.parallax2 .overlay {
+    min-height: 200px;
+    background: rgba(15, 60, 70, .75);
+    font-size: 40px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    -moz-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+}
 
 .parallax3 {
-    background: url(../img/asa.jpg) no-repeat center center; /* DEFINE IMAGE PATH CAREFULLY*/
+    background: url(../img/asa.jpg) no-repeat center center;
+    /* DEFINE IMAGE PATH CAREFULLY*/
+    
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -155,15 +262,21 @@ i:hover{
     background-attachment: fixed;
 }
 
-    .parallax3 .overlay {
-        min-height: 200px;
-        background: rgba(15, 60, 70,.75);
-        font-size: 40px;
-        padding-bottom: 60px;
-        padding-top: 60px;
-    }
+.parallax3 .overlay {
+    min-height: 200px;
+    background: rgba(15, 60, 70, .75);
+    font-size: 40px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    -moz-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+}
+
 .parallax4 {
-    background: url(../img/city.jpg) no-repeat center center; /* DEFINE IMAGE PATH CAREFULLY*/
+    background: url(../img/city.jpg) no-repeat center center;
+    /* DEFINE IMAGE PATH CAREFULLY*/
+    
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -171,61 +284,95 @@ i:hover{
     background-attachment: fixed;
 }
 
-    .parallax4 .overlay {
-        min-height: 200px;
-        background: rgba(15, 60, 70,.75);
-        font-size: 40px;
-        padding-bottom: 60px;
-        padding-top: 60px;
-    }
+.parallax4 .overlay {
+    min-height: 200px;
+    background: rgba(15, 60, 70, .75);
+    font-size: 40px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    -moz-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+}
+
+.parallax5 {
+    background: url(../img/mountain.jpg) no-repeat center center;
+    /* DEFINE IMAGE PATH CAREFULLY*/
+    
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.parallax5 .overlay {
+    min-height: 200px;
+    background: rgba(15, 60, 70, .75);
+    font-size: 40px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    -moz-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+}
+
 /*================================
     PORTFOLIO / WORK SECTION STYLES
 ==================================*/
-.portfolio-item img:hover { /* POSTFOLIO IMAGE BIG ON HOVER */
+
+.portfolio-item img:hover {
+    /* POSTFOLIO IMAGE BIG ON HOVER */
+    
     cursor: pointer;
     -webkit-transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
     transition-duration: 0.3s;
-    -webkit-transition-duration: 0.3s; /* Safari */
+    -webkit-transition-duration: 0.3s;
+    /* Safari */
+    
     z-index: 1;
 }
-
 /*================================
     VIDEO SECTION STYLES
 ==================================*/
+
 #video-sec {
     color: #fff;
     text-align: center;
 }
 
-    #video-sec .overlay {
-        background-color: rgba(0, 0, 0, 0.85);
-        min-height: 300px;
-        color: #fff;
-    }
+#video-sec .overlay {
+    background-color: rgba(0, 0, 0, 0.85);
+    min-height: 300px;
+    color: #fff;
+}
 
-    #video-sec h1 {
-        padding-top: 80px;
-        font-size: 50px;
-        font-weight: 900;
-        padding-bottom: 30px;
-    }
+#video-sec h1 {
+    padding-top: 80px;
+    font-size: 50px;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
 /*================================
     CLIENTS SECTION STYLES
 ==================================*/
+
 #clients {
-    background-color:#f4f4f4;
-    padding-bottom:50px;
-    padding-top:50px;
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
-    #clients img {
-        opacity:0.5;
-        cursor:pointer;
-    }
-        #clients img:hover {
-            opacity:1;
-        }
+
+#clients img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#clients img:hover {
+    opacity: 1;
+}
 /*================================
     FOOTER SECTION STYLES
 ==================================*/
@@ -239,7 +386,8 @@ footer {
     color: #fff;
 }
 
-    footer a, footer a:hover {
-        color: #fff;
-        text-decoration: none;
-    }
+footer a,
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
