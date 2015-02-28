@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>John Nguyen's Website</title>
+		<link rel="icon" type="image/jpg" href="crystalfruit.png">
+		<link rel="stylesheet" href="stylesheets/styles.css">
+		<link rel="stylesheet" href="stylesheets/animate.css">
+		<SCRIPT LANGUAGE="JavaScript">
+			function go(loc){
+				document.getElementById('frame').src = loc;
+			}
+		</script>
+	</head>
+
+	<body>
+        <script src="js/rAF.js"></script>
+        <script src="js/demo-2.js"></script>
+		
+		<div class="bodybox">
+			<div class="topbox" onClick="location=''" style="cursor:pointer">
+				<p class="animated fadeInLeft">
+					<span onClick="window.open('http://i.imgur.com/7KY3rUC.png')" style="cursor:pointer"><img src="crystalfruit.png" width="25px" /></span> <span style="font-size:20pt">hello world</span> <span style="color:red;font-size:18pt">></span> welcome to my web page
+					<br>
+					<span style="font-size:8pt;opacity:.7;color:#AAAAAA"><a href="http://tehjawn.github.io/" target="_blank" class="textlink">website by john nguyen<a></span>
+				</p>
+			</div>
+			<div class="border1"></div>
+			<div class="tabstrip">
+				<table style="width:100%">
+					<td style="width:20%" class="tab" onClick="go('about.html')"><center>about me
+					<td style="width:20%" class="tab" onClick="go('proj.html')"><center>current projects
+					<td style="width:20%" class="tab" onClick="go('news.html')"><center>news
+					<td style="width:20%" class="tab" onClick="go('resume.html')"><center>resume
+					<td style="width:20%" class="tab" onClick="go('contact.html')"><center>contact
+				</table>
+			</div>
+			<div class="border1"></div>
+			<div id="contentframe">
+				<iframe id="frame" name="frame" class="frame" src="about.html" style="overflow:auto" height="100%" ></iframe>
+			</div>
+		</div>
+	</body>
+	
+</html>

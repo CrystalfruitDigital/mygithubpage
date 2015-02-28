@@ -1,46 +1,347 @@
-<!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>John Nguyen's Website</title>
-		<link rel="icon" type="image/jpg" href="crystalfruit.png">
-		<link rel="stylesheet" href="stylesheets/styles.css">
-		<link rel="stylesheet" href="stylesheets/animate.css">
-		<SCRIPT LANGUAGE="JavaScript">
-			function go(loc){
-				document.getElementById('frame').src = loc;
-			}
-		</script>
-	</head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>John Nguyen</title>
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS STYLE SHEET -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLES -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-	<body>
-        <script src="js/rAF.js"></script>
-        <script src="js/demo-2.js"></script>
-		
-		<div class="bodybox">
-			<div class="topbox" onClick="location=''" style="cursor:pointer">
-				<p class="animated fadeInLeft">
-					<span onClick="window.open('http://i.imgur.com/7KY3rUC.png')" style="cursor:pointer"><img src="crystalfruit.png" width="25px" /></span> <span style="font-size:20pt">hello world</span> <span style="color:red;font-size:18pt">></span> welcome to my web page
-					<br>
-					<span style="font-size:8pt;opacity:.7;color:#AAAAAA"><a href="http://tehjawn.github.io/" target="_blank" class="textlink">website by john nguyen<a></span>
-				</p>
-			</div>
-			<div class="border1"></div>
-			<div class="tabstrip">
-				<table style="width:100%">
-					<td style="width:20%" class="tab" onClick="go('about.html')"><center>about me
-					<td style="width:20%" class="tab" onClick="go('proj.html')"><center>current projects
-					<td style="width:20%" class="tab" onClick="go('news.html')"><center>news
-					<td style="width:20%" class="tab" onClick="go('resume.html')"><center>resume
-					<td style="width:20%" class="tab" onClick="go('contact.html')"><center>contact
-				</table>
-			</div>
-			<div class="border1"></div>
-			<div id="contentframe">
-				<iframe id="frame" name="frame" class="frame" src="about.html" style="overflow:auto" height="100%" ></iframe>
-			</div>
-		</div>
-	</body>
-	
+
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/vivaldi-logo.png" alt="" class="img-responsive" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right scroll-me">
+                <ul class="nav navbar-nav ">
+                    <li><a href="#home">HOME</a>
+                    </li>
+                    <li><a href="#about">ABOUT ME</a>
+                    </li>
+                    <li><a href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li><a href="#works">RECENT PROJECTS</a>
+                    </li>
+                    <li><a href="#news">NEWS (WIP)</a>
+                    </li>
+                    <li><a onclick="window.open('http://jn23.me/resume3.pdf')">RESUME</a>
+                    </li>
+                    <li><a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- NAVBAR CODE END -->
+    <div id="home">
+        <div class="overlay">
+            <!-- overylay class usage -->
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-6 col-sm-6">
+                        <h1><span style="color:rgb(70, 120, 140)">></span> hello world</h1>
+                        <h3>welcome to my web page</h3>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <img src="assets/img/me.jpg" class="img-circle img-responsive center-block" />
+                    </div>
+                </div>
+                <div style="background-color:#AABBCC; padding:1px; margin-top:5%" id="about"></div>
+                <div class="col-md-12 text-center pad-bottom">
+                    <h1 class="head-set">ABOUT ME</h1>
+                    <p style="font-size:16">
+                        Hello, my name is John Nguyen! I am a jack of all trades with a current focus on graphic and web design and mobile application development.
+                        <br>Right now I work at Proscape Technologies as a Content Assembly Associate and at Temple University as an Office Assistant. I also am a freelance graphics designer and aspiring entrepreneur.
+                        <br><br>I am currently majoring in Computer Science at Temple University and hope to graduate by 2017.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding:30px;width:100%;background-color:#46788c"></div>
+    <div style="padding:10px;width:100%;background-color:#13555A"></div>
+
+    <!--HOME SECTION END  -->
+        <div class="parallax3">
+            <div class="overlay">
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                            <div>
+                                <strong>ambitious. <br> hard-working. <br> quick to adapt and learn.</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <section id="portfolio">
+        <div class="container">
+            <div class="row text-center">
+                <h1>PORTFOLIO</h1>
+                <br>
+                <p>
+                    <span style="color:#AAAAAA">Click on the icon images below to reach my design gallery on Minus, Github, and SoundCloud</span>
+                </p>
+                <br>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <i class="fa fa-pencil fa-5x" onclick="window.open('http://tehjawn.minus.com/')"></i>
+                    <h4 class="head-set">DIGITAL ARTIST</h4>
+                    <p>
+                        I am an illustrator, graphics and visual communications designer, and have two years of experience in 3-D scene composition.
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <i class="fa fa-desktop  fa-5x" onclick="window.open('https://github.com/tehjawn')"></i>
+                    <h4 class="head-set">SOFTWARE ENGINEER</h4>
+                    <p>
+                        I am an aspiring hardware hacker and Android developer. I currently know basic Java and web development languages and am enrolled in Discrete Mathematics and Java 2168 at Temple University.
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <i class="fa fa-music  fa-5x" onclick="window.open('https://soundcloud.com/tehjawnlol')"></i>
+                    <h4 class="head-set">"JACK OF ALL TRADES"</h4>
+                    <p>
+                        I am also a musician who plays guitar, breakdancer who co-founded Conestoga High School's Hip-Hop club, manga illustrator, redditor and hackathon lover amongst other things.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SERVICES SECTION END  -->
+    <div class="parallax1">
+        <div class="overlay">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                        <div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--PARALLAX LIKE / STATS SECTION END  -->
+    <section id="works">
+        <div class="container">
+            <div class="row text-center pad-bottom">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                    <h2 class="head-set">RECENT PROJECTS</h2>
+                    <p>
+                        These are three highlights from recent projects I have undertaken:
+                    </p>
+                </div>
+            </div>
+            <div class="row text-center portfolio-item">
+
+                <div class="col-md-4 col-sm-4 ">
+                    <div class="">
+                        <img src="assets/img/1.png" class="img-responsive " alt="" onclick="window.open('http://tehjawn.minus.com/i/wTvqdEZIL3ee')" />
+                        <h3>Crystal Prism Graphic</h3>
+                        <p>
+                            A simplistic prism graphic created while
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 ">
+                    <div class="">
+                        <img src="assets/img/2.jpg" class="img-responsive " alt="" onclick="window.open('http://tehjawn.minus.com/i/yRiyDdoM3BDm')" />
+
+                        <h3>Burning Pith Helm</h3>
+                        <p>
+                            A 3D composition piece using Source Filmmaker studio and GIMP.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-4 ">
+                    <div class="">
+                        <img src="assets/img/3.png" class="img-responsive " alt="" onclick="window.open('http://tehjawn.minus.com/i/bm7FYkV3TRKcc')" />
+
+                        <h3>Mawsom SmartThermostat Application Design</h3>
+                        <p>
+                            A materialistic design schema for the upcoming Mawsom SmartThermostat Android Application.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+
+        <div class="parallax2">
+            <div class="overlay">
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                            <div>
+                                <strong>energetic. <br> passionate. <br> hard-working.</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row text-center ">
+                <div class="col-md-12">
+                    <h2>NEWS : (Coming Soon)</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax4">
+        <div class="overlay">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                        <div>
+                            <strong></strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--WORKS / PORTFOLIO SECTION END
+    <div id="video-sec" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Ycv5fNd4AeM',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}">
+        change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h1>HERE IS BACKGROUND VEDIO</h1>
+                        <h4>This scripts uses plugin <strong>jquery.mb.YTPlayer</strong>
+
+                        </h4>
+                        <h4>to play video in background of divs
+
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    VIDEO SECTION END-->
+    <section id="contact">
+        <div class="container">
+            <div class="row text-center">
+                <h1>Contact Information</h1>
+                <br>
+                <br>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <i class="fa fa-graduation-cap fa-5x" onclick="window.open('http://tehjawn.minus.com/')"></i>
+                    <h4 class="head-set">SCHOOL</h4>
+                    <p>
+
+                        <i class="fa fa-map-marker  fa-1x" onclick="window.open('https://soundcloud.com/tehjawnlol')"></i> Temple University Main Campus
+                        <br> Philadelphia, PA
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <i class="fa fa-phone  fa-5x" onclick="window.open('https://github.com/tehjawn')"></i>
+                    <h4 class="head-set">CALL</h4>
+                    <p>
+
+                        <i class="fa fa-mobile  fa-1x" onclick="window.open('https://soundcloud.com/tehjawnlol')"></i> cell: 484.472.2402
+                        <br>
+                        <i class="fa fa-skype  fa-1x" onclick="window.open('https://soundcloud.com/tehjawnlol')"></i> Skype: thejawnnguyen
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <i class="fa fa-wifi  fa-5x" onclick="window.open('https://soundcloud.com/tehjawnlol')"></i>
+                    <h4 class="head-set">SOCIAL</h4>
+                    <p>
+
+                        <i class="fa fa-linkedin  fa-1x" onclick="window.open('https://soundcloud.com/tehjawnlol')"></i>
+                        <a href="https://www.linkedin.com/profile/view?id=320687578&trk=nav_responsive_tab_profile_pic"> - LinkedIn</a>
+                        <br>
+                        <i class="fa fa-facebook  fa-1x" onclick="window.open('https://soundcloud.com/tehjawnlol')"></i>
+                        <a href="https://www.facebook.com/TUJN23"> - Facebook</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="parallax4">
+        <div class="overlay">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                        <div>
+                            <strong></strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT SECTION END-->
+    <footer>
+        © 2015 jn23.me | <a style="color:#AABBCC" href="http://www.designbootstrap.com/" target="_blank">Created with Twitter Bootstrap and DesignBootstrap</a>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- REQUIRED SCRIPTS FILES -->
+    <!-- CORE JQUERY FILE -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- REQUIRED BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- BACKGROUND VIDEO PLUGIN  -->
+    <script src="assets/js/jquery.mb.YTPlayer.js"></script>
+    <!-- SCROLLING SCRIPTS PLUGIN  -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- CUSTOM SCRIPTS   -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
 </html>
