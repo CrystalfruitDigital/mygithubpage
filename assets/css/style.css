@@ -175,6 +175,43 @@ i:hover {
     padding-bottom: 40px;
 }
 
+.blink_text2 {
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: blinker;
+	-moz-animation-duration: 2.5s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	animation-name: blinker;
+	animation-duration: 2.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	color:rgb(70, 120, 140);
+}
+
+@-moz-keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
 #portfoliohome {
     background: url(../img/5.jpg) no-repeat center center;
     /*Full Witdth background image*/
@@ -242,7 +279,7 @@ i:hover {
 
 .parallax2 .overlay {
     min-height: 200px;
-    background: rgba(15, 60, 70, .75);
+    background: rgba(70, 30, 30, .75);
     font-size: 40px;
     padding-bottom: 60px;
     padding-top: 60px;
