@@ -183,7 +183,7 @@ i:hover {
     -webkit-background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
-    min-height: 600px;
+    min-height: 250px;
 }
 /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
 
@@ -192,7 +192,7 @@ i:hover {
     background-color: rgba(70, 140, 140, .7);
     /*.75 opacity of the color so that background image is visible*/
     
-    min-height: 600px;
+    min-height: 250px;
     color: #fff;
 }
 
