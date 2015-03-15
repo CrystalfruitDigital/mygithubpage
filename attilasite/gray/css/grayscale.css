@@ -9,7 +9,8 @@ body {
     height: 100%;
     font-family: Segoe UI Light,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #00182C;
+    background-color: #000;
+    00182C
 	overflow-x:hidden;
 }
 
@@ -148,7 +149,6 @@ a:focus {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
     text-align: center;
     color: #fff;
     background: url(../img/intro-bg.png) no-repeat bottom center scroll;
@@ -159,9 +159,9 @@ a:focus {
     -o-background-size: cover;
 }
 .intro .overlay {
-    background-color: rgba(40, 80, 130, .7);
+    background-color: rgba(20, 50, 70, .7);
 	width:100%;
-	height:100%;
+	height:inherit;
     display: table;
     padding: 100px 0;
     text-align: center;
@@ -414,13 +414,13 @@ body {
       height: 480px;
     }
 #thumbnail-preview-indicators .slides .slide-1 {
-  background-image: url(https://s3.amazonaws.com/ooomf-com-files/wdXqHcTwSTmLuKOGz92L_Landscape.jpg); 
+  background-image: url(../img/fitlife.jpg); 
 }
 #thumbnail-preview-indicators .slides .slide-2 {
-  background-image: url(https://s3.amazonaws.com/ooomf-com-files/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg);
+  background-image: url(../img/competition.png);
 }
 #thumbnail-preview-indicators .slides .slide-3 {
-  background-image: url(https://s3.amazonaws.com/ooomf-com-files/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg);
+  background-image: url(../img/model.jpg);
 }
 #thumbnail-preview-indicators .carousel-inner .item .carousel-caption {
   top: 20%;
@@ -471,7 +471,7 @@ body {
 
 /* Shadowbox */
 .shadowbox {
+    box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .5);
     -moz-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .5);
     -webkit-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .5);
 }
