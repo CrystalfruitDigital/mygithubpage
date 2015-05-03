@@ -1,0 +1,290 @@
+/*=============================================================
+    Authour URL: www.designbootstrap.com
+
+    http://www.designbootstrap.com/
+
+    License: MIT
+
+    http://opensource.org/licenses/MIT
+
+    100% Free To use For Personal And Commercial Use.
+
+    IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
+   
+========================================================  */
+
+@keyframes fadein {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* Firefox */
+    
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*================================
+    GENERAL STYLES
+==================================*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/* GOOGLE FREE FONTS */
+
+html,
+body {
+	color:white;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    
+    -o-animation: fadein 2s;
+    /* Opera */
+	background-color: #222222;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.head-set {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pad-bottom {
+    padding-bottom: 60px;
+}
+/*================================
+    NAVBAR STYLES
+==================================*/
+
+.navbar-default {
+    background-color: rgb(0, 0, 0);
+    border-color: transparent;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+i {
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+
+i:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.shadow {
+    margin-bottom: -10px;
+    padding: 5px;
+    width: 100%;
+    -webkit-box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
+    -moz-box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
+    box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
+}
+/*================================
+    HOME SECTION STYLES
+==================================*/
+/*STYLE OF BACKGROUND IMAGE*/
+
+
+.p-cls {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.blink_text2 {
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 2.3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: blinker;
+	-moz-animation-duration: 2.3s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	animation-name: blinker;
+	animation-duration: 2.3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	color:rgb(255, 255, 255);
+}
+
+@-moz-keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+/*======================================
+    PARALLAX LIKE / STATS SECTION STYLES
+=========================================*/
+
+.parallax1 {
+    background: url(../img/sample1.jpg) no-repeat center center;
+    /* DEFINE IMAGE PATH CAREFULLY*/
+    
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.parallax1 .overlay {
+    min-height: 200px;
+    background: rgba(0, 0, 0, .75);
+    font-size: 40px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    -moz-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+    box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
+}
+
+
+
+/*================================
+    PORTFOLIO / WORK SECTION STYLES
+==================================*/
+
+.portfolio-item img:hover {
+    /* POSTFOLIO IMAGE BIG ON HOVER */
+    
+    cursor: pointer;
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    /* Safari */
+    
+    z-index: 1;
+}
+/*================================
+    VIDEO SECTION STYLES
+==================================*/
+
+#video-sec {
+    color: #fff;
+    text-align: center;
+}
+
+#video-sec .overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    min-height: 300px;
+    color: #fff;
+    -moz-box-shadow: inset 0 20px 106px 50px rgba(0, 0, 0, .45);
+    -webkit-box-shadow: inset 0 20px 106px 50px rgba(0, 0, 0, .45);
+    box-shadow: inset 0 20px 106px 50px rgba(0, 0, 0, .45);
+}
+
+#video-sec h1 {
+    padding-top: 80px;
+    font-size: 50px;
+    font-weight: 900;
+}
+/*================================
+    CLIENTS SECTION STYLES
+==================================*/
+
+#clients {
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#clients img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#clients img:hover {
+    opacity: 1;
+}
+/*================================
+    FOOTER SECTION STYLES
+==================================*/
+
+footer {
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 900;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+footer a,
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
