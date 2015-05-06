@@ -93,7 +93,7 @@ section {
 ==================================*/
 
 .navbar-default {
-    background-color: rgb(70, 120, 140);
+    background-color: rgb(55, 55, 55);
     border-color: transparent;
     color: #fff;
 }
@@ -103,7 +103,7 @@ section {
 }
 
 .navbar-default .navbar-nav > a:hover {
-    color: rgb(100, 250, 150);
+    color: #fff;
 }
 
 .navbar-brand {
