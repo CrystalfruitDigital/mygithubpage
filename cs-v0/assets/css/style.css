@@ -74,7 +74,7 @@ body {
     
     -o-animation: fadein 2s;
     /* Opera */
-	background-color: #222222;
+	background-color: #222;
 }
 
 section {
@@ -140,6 +140,18 @@ i:hover {
     HOME SECTION STYLES
 ==================================*/
 /*STYLE OF BACKGROUND IMAGE*/
+
+#cover{
+	height:100%;
+	background-size:cover;
+	background-color:white;
+	padding-top:80px;
+	padding-bottom:25px;
+
+    -webkit-box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
+    -moz-box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
+    box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
+}
 
 
 .p-cls {
@@ -215,6 +227,15 @@ i:hover {
 /*================================
     PORTFOLIO / WORK SECTION STYLES
 ==================================*/
+
+.item-display{
+	background-color: white;
+	margin-bottom: 40px;
+	color: black;
+	font-family: palatino;
+	text-align: center;
+}
+
 
 .portfolio-item img:hover {
     /* POSTFOLIO IMAGE BIG ON HOVER */
