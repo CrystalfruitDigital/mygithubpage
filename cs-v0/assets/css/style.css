@@ -98,6 +98,7 @@ section {
     background-color: rgb(0, 0, 0);
     border-color: transparent;
     color: #fff;
+	font-family: Merienda One;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -216,7 +217,7 @@ i:hover {
     background: rgba(0, 0, 0, .75);
     font-size: 40px;
     padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 95px;
     -moz-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
     -webkit-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
     box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
@@ -229,9 +230,9 @@ i:hover {
 ==================================*/
 
 .item-display{
-	background-color: white;
+	background-color: rgba(100,100,100,.5);
 	margin-bottom: 40px;
-	color: black;
+	color: white;
 	font-family: palatino;
 	text-align: center;
 }
