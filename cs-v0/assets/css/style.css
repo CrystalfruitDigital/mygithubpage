@@ -83,7 +83,6 @@ section {
 }
 
 .head-set {
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -163,59 +162,10 @@ i:hover {
 ==================================*/
 /*STYLE OF BACKGROUND IMAGE*/
 
-#cover{
-	height:100%;
-	background-size:cover;
-	background-color:white;
-	padding-top:80px;
-	padding-bottom:25px;
-
-    -webkit-box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
-    -moz-box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
-    box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
-}
-
 
 .p-cls {
     padding-top: 30px;
     padding-bottom: 40px;
-}
-
-.blink_text2 {
-	-webkit-animation-name: blinker;
-	-webkit-animation-duration: 2.3s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
-
-	-moz-animation-name: blinker;
-	-moz-animation-duration: 2.3s;
-	-moz-animation-timing-function: linear;
-	-moz-animation-iteration-count: infinite;
-
-	animation-name: blinker;
-	animation-duration: 2.3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-
-	color:rgb(255, 255, 255);
-}
-
-@-moz-keyframes blinker {  
-	0% { opacity: 1.0; }
-	50% { opacity: 0.0; }
-	100% { opacity: 1.0; }
-}
-
-@-webkit-keyframes blinker {  
-	0% { opacity: 1.0; }
-	50% { opacity: 0.0; }
-	100% { opacity: 1.0; }
-}
-
-@keyframes blinker {  
-	0% { opacity: 1.0; }
-	50% { opacity: 0.0; }
-	100% { opacity: 1.0; }
 }
 
 /*======================================
@@ -225,7 +175,6 @@ i:hover {
 .parallax1 {
     background: url(../img/sample1.jpg) no-repeat center center;
     /* DEFINE IMAGE PATH CAREFULLY*/
-    
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -244,7 +193,29 @@ i:hover {
     box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .15);
 }
 
+.teamImg span {
+    font-family: Merienda One;
+	position: absolute;
+	width: 12em;
+	margin-top: 30px;
+	font-size: 12pt;
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
+	left:45%;
+	display: inline;
+	z-index:9999;
+	background-color: rgba(0,0,0,.6);
+	padding: 10px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
 
+.teamImg:hover span {
+    opacity: 1;
+}
 
 /*================================
     PORTFOLIO / WORK SECTION STYLES
@@ -260,10 +231,9 @@ i:hover {
 }
 
 
-.portfolio-item img:hover {
+.item-display img:hover {
     /* POSTFOLIO IMAGE BIG ON HOVER */
     
-    cursor: pointer;
     -webkit-transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
@@ -273,53 +243,35 @@ i:hover {
     
     z-index: 1;
 }
-/*================================
-    VIDEO SECTION STYLES
-==================================*/
 
-#video-sec {
+.contact{
+    background: url(http://i.imgur.com/2PEiLGQ.jpg) no-repeat center center;
+    padding-top:80px;
+	margin-top:-80px;
+    padding-bottom:120px;
+	margin-bottom:-120px;
+    -webkit-background-size: cover;
+    background-size: cover;
     color: #fff;
-    text-align: center;
 }
 
-#video-sec .overlay {
-    background-color: rgba(0, 0, 0, 0.55);
-    min-height: 300px;
-    color: #fff;
-    -moz-box-shadow: inset 0 20px 106px 50px rgba(0, 0, 0, .45);
-    -webkit-box-shadow: inset 0 20px 106px 50px rgba(0, 0, 0, .45);
-    box-shadow: inset 0 20px 106px 50px rgba(0, 0, 0, .45);
+.contact .overlay {
+    padding-top:80px;
+	margin-top:-80px;
+    padding-bottom:120px;
+	margin-bottom:-120px;
+    background: rgba(20, 20, 20, .75);
+    -moz-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 16px 10px rgba(0, 0, 0, .5);
 }
 
-#video-sec h1 {
-    padding-top: 80px;
-    font-size: 50px;
-    font-weight: 900;
-}
-/*================================
-    CLIENTS SECTION STYLES
-==================================*/
-
-#clients {
-    background-color: #f4f4f4;
-    padding-bottom: 50px;
-    padding-top: 50px;
-}
-
-#clients img {
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-#clients img:hover {
-    opacity: 1;
-}
 /*================================
     FOOTER SECTION STYLES
 ==================================*/
 
 footer {
-    padding: 20px;
+    padding: 20px;	
     font-size: 15px;
     text-align: center;
     font-weight: 900;
