@@ -133,15 +133,28 @@ i:hover {
     margin-bottom: -10px;
     padding: 5px;
     width: 100%;
-    -webkit-box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
-    -moz-box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
-    box-shadow: 0 -5px 40px 10px rgba(40, 40, 40, .5);
+    -webkit-box-shadow: 0 -5px 40px 10px rgba(20, 20, 20, .5);
+    -moz-box-shadow: 0 -5px 40px 10px rgba(20, 20, 20, .5);
+    box-shadow: 0 -5px 40px 10px rgba(20, 20, 20, .5);
+}
+
+.shadow2 {
+    margin-bottom: -10px;
+    padding: 5px;
+    width: 100%;
+    -webkit-box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .5);
 }
 
 .top-shadow{
     -moz-box-shadow: inset 0 0 76px 20px rgba(0, 0, 0, .95);
     -webkit-box-shadow: inset 0 0 76px 20px rgba(0, 0, 0, .95);
     box-shadow: inset 0 0 76px 20px rgba(0, 0, 0, .95);
+}
+
+.circle-border{
+	border: 5px solid #fff;
 }
 
 
@@ -239,8 +252,8 @@ i:hover {
 
 .item-display{
 	background-color: rgba(255,255,255,.4);
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 10px;
+	padding-bottom: 0px;
 	color: white;
 	font-family: palatino;
 	text-align: center;
