@@ -88,6 +88,16 @@ section {
 .pad-bottom {
     padding-bottom: 60px;
 }
+
+
+.buy-now{
+	position: fixed;
+	bottom: 40px;
+	right: 30px;
+	background-color: rgba(0,0,0,.0);
+	z-index:9999;
+}
+
 /*================================
     NAVBAR STYLES
 ==================================*/

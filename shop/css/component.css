@@ -1,0 +1,106 @@
+
+.shadow2 {
+    -webkit-box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .5);
+}
+
+#shop{
+	padding-top:1%;
+	padding-bottom:4%;
+	background-color: #334455;
+}
+
+.col{
+	padding-left: 15%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-right: 15%;
+	width:100%;
+	position: relative;
+	min-height: 1px;
+}
+
+.col2{
+	width:100%;
+	position: relative;
+	min-height: 1px;
+}
+
+.col2 .half-col{
+	width:100%;
+	position: relative;
+}
+
+.breakline{
+	width: 100%;
+	padding: 1px;
+	background-color: rgba(255,255,255,.8);
+}
+
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+.shop-cover .large-header {
+	background-image: url('../img/graypoly.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+
+.advance {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	bottom: 10%;
+	width:100%;
+}
+
+.buy-now{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	background-color: rgba(0,0,0,.0);
+	z-index:9999;
+}
+
+.shop-cover .main-title {
+	text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+	font-weight: 200;
+}
+
+@media only screen and (max-width : 768px) {
+	.shop-cover .main-title{
+		font-size: 3em;
+	}
+}
