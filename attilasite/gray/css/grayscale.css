@@ -36,7 +36,7 @@
     font-family: Segoe UI Light,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
 	overflow-x:hidden;
-	background-color: #221144;
+	background-color: #110522;
  }
  #nutritionpage{
     width: 100%;
@@ -44,7 +44,7 @@
     font-family: Segoe UI Light,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
 	overflow-x:hidden;
-	background-color: #552211;
+	background-color: #221105;
  }
  
 body {
@@ -193,7 +193,7 @@ a:focus {
     height: auto;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bgblur.png) no-repeat bottom center scroll;
+    background: url(../img/cover1.png) no-repeat top center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -458,10 +458,11 @@ body {
       height: 480px;
     }
 #thumbnail-preview-indicators .slides .slide-1 {
-  background-image: url(../img/fitlife.jpg); 
+  background-image: url(../img/slide_fitness.png); 
 }
 #thumbnail-preview-indicators .slides .slide-2 {
-  background-image: url(../img/competition.png);
+  background-image: url(../img/slide_competition.jpg);
+  
 }
 #thumbnail-preview-indicators .slides .slide-3 {
   background-image: url(../img/model.jpg);
@@ -546,13 +547,14 @@ body {
       height: 480px;
     }
 #thumbnail-preview-indicators .slides .slide-1 {
-  background-image: url(../img/fitlife.jpg); 
+  background-image: url(../img/slide_fitness.png); 
 }
 #thumbnail-preview-indicators .slides .slide-2 {
-  background-image: url(../img/competition.png);
+  background-image: url(../img/slide_competition.png);
+  
 }
 #thumbnail-preview-indicators .slides .slide-3 {
-  background-image: url(../img/model.jpg);
+  background-image: url(../img/slide_model.png);
 }
 #thumbnail-preview-indicators .slides .slide-4 {
   background-image: url(../img/PEScience.jpg); 
