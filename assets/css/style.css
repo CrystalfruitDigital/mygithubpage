@@ -145,13 +145,18 @@ i:hover {
     -moz-box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .15);
     box-shadow: 0 -5px 40px 10px rgba(0, 0, 0, .15);
 }
+.shadow-img {
+    -webkit-box-shadow: 0 0px 30px 5px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 0px 30px 5px rgba(0, 0, 0, .25);
+    box-shadow: 0 0px 30px 5px rgba(0, 0, 0, .25);
+}
 /*================================
     HOME SECTION STYLES
 ==================================*/
 /*STYLE OF BACKGROUND IMAGE*/
 
 #home {
-    background: url(../img/home.jpg) no-repeat center center;
+    background: url(../img/home.jpg) no-repeat center top;
     /*Full Witdth background image*/
     
     padding: 0;
@@ -201,7 +206,7 @@ i:hover {
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 
-	color:rgb(70, 120, 140);
+	color:rgb(170, 220, 240);
 }
 
 @-moz-keyframes blinker {  
