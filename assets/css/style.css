@@ -156,7 +156,7 @@ i:hover {
 /*STYLE OF BACKGROUND IMAGE*/
 
 #home {
-    background: url(../img/home.jpg) no-repeat center top;
+    background: url(../img/home.png) no-repeat center center;
     /*Full Witdth background image*/
     
     padding: 0;
