@@ -1,0 +1,164 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: Segoe UI Light;
+	font-size: 14pt;
+	color: #555;
+	background-color: #F44;
+}
+
+.sidebar{
+	background-color: #C00;
+	min-height: 100%;
+	max-height: 100%;
+	z-index: 9999;
+}
+
+.sidebar h1{
+	padding: 10px;
+	color: white;
+}
+
+.sidebar p{
+	font-size: 10pt;
+	padding-left: 30px;
+	color: white;
+}
+
+@media (max-width: 768px) {
+	.sidebar{
+		background-color: #F33;
+		z-index: 9999;
+	}
+}
+
+.sidebar ul{
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar li{
+	list-style: none;
+	color: white;
+	background-color: transparent;
+	padding: 5px 30px 5px 30px;
+}
+.sidebar li a{
+	color: white;
+}
+
+.main{
+	margin-top: 10px;
+	background-color: transparent;
+}
+
+.main ul{
+	margin: 0;
+	padding: 0;
+}
+
+.main li{
+	list-style: none;
+	color: white;
+}
+
+.shadow{
+	-webkit-box-shadow: 0px 0px 10px 3px #700;
+}
+.shadow-dig{
+	-webkit-box-shadow: 0px 3px 10px 1px #511;
+}
+
+.content{
+	text-shadow: 0px 0px 20px #000;
+}
+
+.content-wrapper{
+	background-image: url('../portrush.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center left;
+	max-width: 100%;
+	background-color: #ABC;
+	min-height: 100%;
+	max-height: 100%;
+	z-index: 1;
+}
+
+.overlay{
+	max-width: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	color: white;
+	text-align: center;
+	background-color: rgba(0,0,0,.5);
+}
+
+.overlay h1{
+	font-size: 5em;
+	padding-top: 250px;
+	color: white;
+}
+.overlay h3{
+	padding-bottom: 500px;
+}
+
+.divide-line{
+	background-color: rgba(255,255,255,.2);
+	margin-bottom: 20px;
+	padding: 1px;
+}
+
+
+.day-overlay{
+	padding: 25px 30px 25px 30px;
+	background-size: cover;
+	color: white;
+	background-color: rgba(0,0,0,.4);
+	transition: all .5s;
+}
+.day-overlay:hover{
+	background-color: rgba(250,250,250,.2);
+	cursor: pointer;
+}
+
+.day-overlay h1{
+	color: white;
+}
+
+
+#dayzero{
+	margin-bottom: 20px;
+	background-image: url('../vnceblur.jpg');
+	background-position: center right;
+	background-size: contain;
+	background-attachment: fixed;
+	color: white;
+}
+
+#dayone{
+	margin-bottom: 20px;
+	background-image: url('../terminal4.jpg');
+	background-position: center right;
+	background-size: contain;
+	background-attachment: fixed;
+	color: white;	
+}
+
+#daytwo{
+	margin-bottom: 20px;
+	background-image: url('../liftoff.jpg');
+	background-position: center left;
+	background-attachment: fixed;
+	color: white;	
+}
+
+
+
+
+
+
+
+
+
+
