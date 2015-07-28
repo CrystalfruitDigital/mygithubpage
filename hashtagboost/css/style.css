@@ -21,6 +21,7 @@ html, body{
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
+
 .subtitle{
     position: absolute;
     bottom: 10%;
@@ -44,14 +45,16 @@ html, body{
 	src: url(NEWACADEMY.ttf) format("truetype");
 }
 h1 {
-	font-size: 8em;
+	font-size: 6em;
 	padding-top: 150px;
+	text-decoration: underline;
 }
 h2 {
 	font-size: 3em;
 	padding-top: 20px;
 }
-r-boost {
+
+.boost {
 	color: red;
 	text-decoration: underline;
 	text-decoration-color: red;
