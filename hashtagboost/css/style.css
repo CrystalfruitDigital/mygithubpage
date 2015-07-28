@@ -1,0 +1,111 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: "NEW ACADEMY", Segoe UI Light, Tahoma;
+	background-color: rgb(21,20,20);
+	background-image: url("bg.jpg");
+	background-size: cover;
+	color: white;
+}
+
+.pad-top{
+	padding-top: 100px;
+}
+
+.title{
+	text-decoration: underline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.subtitle{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.footer{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@font-face {
+	font-family: "NEW ACADEMY";
+	src: url(NEWACADEMY.ttf) format("truetype");
+}
+h1 {
+	font-size: 8em;
+	padding-top: 150px;
+}
+h2 {
+	font-size: 3em;
+	padding-top: 20px;
+}
+r-boost {
+	color: red;
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+
+r {
+	color: red;
+}
+
+#coming-soon {
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  
+	-webkit-animation:fadeIn ease-in 1;  /
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 2s;
+-moz-animation-delay:2s;
+animation-delay: 2s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 3.2s;
+-moz-animation-delay: 3.2s;
+animation-delay: 3.2s;
+}
+
+.fade-in.four {
+-webkit-animation-delay: 5s;
+-moz-animation-delay: 5s;
+animation-delay: 5s;
+}
+}
