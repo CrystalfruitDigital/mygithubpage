@@ -11,7 +11,7 @@
 
 	<body ng-controller="MainController">
 		<menu>
-			<img src="https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png" width="100px"></img>
+			<img src="https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png" width="80px"></img>
 			<h2><u>Menu</u></h2>
 			<h5 onClick="hideAll()">Hide All Sections</h5>
 			<h5 onClick="showAll()">Show All Sections</h5>
@@ -35,9 +35,32 @@
 			</ul>
 		</menu>
 
+		<chatbox>
+			<div class="chatContainer">
+			  <header>Chat</header>
+			  <br>
+			  <ul id='messages' class="messages"></ul>
+
+			  <div class="chatInputFloat">
+			  	<div class='chatInput'>
+			    <label for="nameInput">Username: </label>
+			    <input type='text' id='nameInput' placeholder='enter a username...'>
+			  	</div>
+				  <footer>
+				    <input type='text' id='messageInput'  placeholder='Type a message...'>
+				    <h5 onClick="removeAll()" style="cursor: pointer">Remove All Messages</h5>
+				  </footer>
+			  </div>
+			</div>
+		</chatbox>
+
 		<header class="animated bounceInDown">
 			<h2><u>Welcome to John's Angular overview!</u></h2>
 		</header>
+		
+		<div id="web-plug" onClick="window.open('http://www.jn23.me')">
+			Back to JN23.ME >
+		</div>
 
 		<div id="a"></div>
 		<section>
@@ -81,7 +104,7 @@
 						<span id="sectionThreePop" class="section">
 							<div class="sectionThreePopTri"></div>
 							<p>
-								The input box is a <u>"model"</u> named "ngTest". The text paragraph that changes with the input is an "Angular binding" named "ngTest". Behind the scenes, AngularJS links the two values together and dynamically updates the binding with the model's value.
+								The input box is a <u>"model"</u> named "ngTest". The text paragraph that changes with the input is an <u>"Angular binding"</u> named "ngTest". Behind the scenes, AngularJS links the two objects together and dynamically updates the binding with the model's value.
 								<br><br>
 								That was a lot of jargon but don't worry, I'll be breaking it down later.
 							</p>
@@ -153,7 +176,7 @@
 				<h1 onClick="toggleSection('sectionFive');">Import jQuery and Angular</h1>
 				<center>
 					<span id="sectionFive" class="section">
-						<p>Place jQuery into your HTML document, THEN place in Angular. Also, link your styles.css and main.js files while you're at it!</p>
+						<p>Place jQuery into your HTML document, then paste in the Angular CDN. Also, link your styles.css and main.js files while you're at it!</p>
 						<div class="step">
 <!-- HTML generated using hilite.me --><div style="background: #111; overflow:auto;width:auto;border:solid #4c4;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">&lt;!-- Insert in header --&gt;</span>
 <span style="color: #f92672">&lt;link</span> <span style="color: #a6e22e">rel=</span><span style="color: #e6db74">&quot;stylesheet&quot;</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;styles.css&quot;</span><span style="color: #f92672">/&gt;</span>
@@ -165,6 +188,21 @@
 <span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;main.js&quot;</span><span style="color: #f92672">&gt;&lt;/script&gt;</span> 
 </pre></div>
 						</div>
+						<p>
+							Importing these links into your HTML document will give you access to jQuery and AngularJS and link your index.html with your main.js and styles.css files (assuming you created them in the same folder as the HTML).
+						</p>
+					</span>
+				</center>
+			</article>
+		</section>
+
+		<div id="f"></div>
+		<section>
+			<article>
+				<h1 onClick="toggleSection('sectionSix');">Getting Started</h1>
+				<center>
+					<span id="sectionSix" class="section">
+						<p>Now that everything is in place, let's turn this project into an Angular app!</p>
 					</span>
 				</center>
 			</article>
@@ -175,7 +213,9 @@
     	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.min.js"></script>
-
+		<script src='https://cdn.firebase.com/js/client/2.1.0/firebase.js'></script>
+		
+		<script src='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js'></script>
     	<script src="SmoothScroll.js"></script>
 
     	<script src="main.js"></script>
