@@ -5,7 +5,7 @@ html, body{
 	padding: 0;
 	box-shadow: inset 0px 0px 40px -20px black;
 	font-family: 'Roboto';
-	background-color: #dedede;
+	background-color: #dfe5ea;
 }
 
 body::-webkit-scrollbar {
@@ -26,7 +26,8 @@ body::-webkit-scrollbar-thumb {
 	position: fixed;
     top: 0;
     right: 0;
-    padding: 10px;
+    padding: 9px;
+    font-size: 10pt;
 	background-color: rgba(0,0,0,.5);
 	color: white;
 	border-radius: 0 0 0 10px;
@@ -40,10 +41,13 @@ body::-webkit-scrollbar-thumb {
 menu{
     -webkit-box-shadow: 0 0 35px -14px black;
 	background-color: #fff;
-	height: 80%;
+	height: 90%;
+	width: 15%;
 	position: fixed;
 	padding: 25px;
+	bottom: 0;
 	text-align: left;
+	font-size: 14pt;
 	transition: .5s;
 }
 
@@ -58,17 +62,26 @@ menu h5:hover{
 	color: #ccc;
 }
 
-ul {
+menu ul {
 	padding: 0;
 	margin: 0;
 	list-style-position: inside;
     list-style-type:  decimal;
 	text-align: left;
-	width: 200px;
+	width: auto;
+}
+
+.sectMenu{
+	color: #04a;
+	font-size: 18pt;
 }
 
 header{
 	padding-top: 35px;
+	margin-left: 20%;
+}
+
+.sectionHeader{
 	margin-left: 20%;
 }
 
@@ -87,17 +100,48 @@ slideOut:hover{
 	cursor: pointer;
 }
 
+chatOut{
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background-color: #888;
+	color: white;
+	padding: 10px 15px 10px 15px;
+	border-radius: 10px;
+}
+chatOut:hover{
+	background-color: #ccc;
+	cursor: pointer;
+}
+
 chatbox{
     -webkit-box-shadow: 0 0 35px -14px black;
 	background-color: #fff;
-	height: 80%;
+	height: 90%;
 	position: fixed;
-	padding: 25px;
+	padding: 1%;
 	text-align: left;
 	right: 0;
 	bottom: 0;
 	max-width:25%;
 	width:20%;
+}
+
+#messageStore{
+	max-height: 75%;
+    overflow: scroll;
+}
+#messageStore::-webkit-scrollbar {
+	width: 0px;
+}
+ 
+#messageStore::-webkit-scrollbar-track {
+	opacity: 0;
+}
+ 
+#messageStore::-webkit-scrollbar-thumb {
+	opacity: 0;
 }
 
 .chatContainer header{
@@ -123,6 +167,7 @@ chatbox{
 .chatInput{
 	background-color: #233;
 	padding: 0;
+	width: 100%;
 	color: white;
 	padding: 10px;
 	margin-bottom: 2px;

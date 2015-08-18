@@ -4,6 +4,12 @@
 	
 	slideOut{
 		display: inherit;
+		z-index: 1001;
+	}
+
+	chatOut{
+		display: inherit;
+		z-index: 1001;
 	}
 
 	header{
@@ -12,12 +18,47 @@
 
 	menu{
 		display: none;
+	    -webkit-box-shadow: 0 0 35px -14px black;
+		background-color: #fff;
+		height: 100%;
+		width: 65%;
+		position: fixed;
+		padding: 25px;
+		text-align: left;
+		transition: .5s;
+		font-size: 25pt;
+		z-index: 1000;
+	}
 
+	menu img{
+		margin-top: 17%;
+	}
+	menu h2{
+	}
+
+	menu ul {
+		padding: 0;
+		margin: 0;
+		list-style-position: inside;
+	    list-style-type:  decimal;
+		text-align: left;
+		width: 100%;
 	}
 
 	chatbox{
 		display: none;
-	} 
+	    -webkit-box-shadow: 0 0 35px -14px black;
+		background-color: #fff;
+		height: 94%;
+		position: fixed;
+		padding: 2%;
+		text-align: left;
+		right: 0;
+		bottom: 0;
+		max-width:75%;
+		min-width:340px;
+		z-index: 1000;
+	}
 	
 	section{
 		width: 100%;

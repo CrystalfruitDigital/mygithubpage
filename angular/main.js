@@ -2,6 +2,16 @@ $(document).ready(function() {
     hideAllStart();
 });
 
+$(window).resize(function(){
+  if($(window).width() >= 1000){
+    $('#menu').show();
+    $('#chat').show();
+  } else {
+    $('#menu').hide();
+    $('#chat').hide();
+  }
+});
+
 hideAllStart = function() {
     $('.section').hide();
 }
@@ -15,8 +25,17 @@ showAll = function() {
 }
 
 toggleSection = function(sectionName){
-	var sectionName = sectionName;
-	$('#'+sectionName).toggle("fast");
+  var sectionName = sectionName;
+  $('#'+sectionName).toggle("fast");
+}
+
+toggleNav = function(){
+  $('#menu').toggle("fast");
+  if($('#slider').text() == '>>'){
+    $('#slider').text('<<');
+  } else {
+    $('#slider').text('>>');
+  }
 }
 
 //Firebase
@@ -59,6 +78,7 @@ messageList.append(messageElement)
 
 //SCROLL TO BOTTOM OF MESSAGE LIST
 messageList[0].scrollTop = messageList[0].scrollHeight;
+$("#messageStore").animate({ scrollTop: $('#messageStore')[0].scrollHeight}, 1000);
 });
 
 removeAll = function(){

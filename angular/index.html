@@ -14,12 +14,16 @@
 	</head>
 
 	<body ng-controller="MainController">
-		<menu>
-			<img src="https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png" width="80px"></img>
-			<h2><u>Menu</u></h2>
-			<h5 onClick="hideAll()">Hide All Sections</h5>
-			<h5 onClick="showAll()">Show All Sections</h5>
+		<menu id="menu">
+			<center>
+				<img src="https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png" width="80px"></img>
+				<h2><u>Menu</u></h2>
+			</center>
+				<h5 onClick="hideAll()">Hide All Sections</h5>
+				<h5 onClick="showAll()">Show All Sections</h5>
 			<br>
+
+			<a href="#a" class="sectMenu">Section I: Setting Up</a>		
 			<ul>
 				<li>
 					<a href="#a" onClick="$('#sectionOne').show('fast');">What is Angular?</a>
@@ -36,19 +40,27 @@
 				<li>
 					<a href="#d" onClick="$('#sectionFive').show('fast');">Import jQuery & Angular</a>
 				</li>
+				<li>
+					<a href="#d" onClick="$('#sectionSix').show('fast');">Getting Started</a>
+				</li>
 			</ul>
 		</menu>
 
-		<slideOut>
-			\/
+		<slideOut onClick="toggleNav();">
+			<div id="slider">>></div>
 		</slideOut>
 
-		<chatbox>
+		<chatOut onClick="toggleSection('chat');">
+			<div id="chatOut">Chat!</div>
+		</chatOut>
+
+		<chatbox id="chat">
 			<div class="chatContainer">
 			  <header>Chat</header>
 			  <br>
-			  <ul id='messages' class="messages"></ul>
-
+			  <div id="messageStore">
+			  	<ul id='messages' class="messages"></ul>
+			  </div>
 			  <div class="chatInputFloat">
 			  	<div class='chatInput'>
 			    <label for="nameInput">Username: </label>
@@ -56,7 +68,7 @@
 			  	</div>
 				  <footer>
 				    <input type='text' id='messageInput'  placeholder='Type a message...'>
-				    <h5 onClick="removeAll()" style="cursor: pointer">Remove All Messages</h5>
+				    <h5 onClick="removeAll()" style="cursor: pointer;background-color:#ddd;border-radius:10px;padding: 5px">Remove All Messages</h5>
 				  </footer>
 			  </div>
 			</div>
@@ -68,6 +80,10 @@
 		
 		<div id="web-plug" onClick="window.open('http://www.jn23.me')">
 			Back to JN23.ME >
+		</div>
+
+		<div class="sectionHeader">
+			<h3><u>Section I: Set Up Basics</u></h3>Feel free to skip this section if you're already familiar with creating a basic project outline
 		</div>
 
 		<div id="a"></div>
