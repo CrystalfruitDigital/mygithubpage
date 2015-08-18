@@ -44,6 +44,7 @@ menu{
 	position: fixed;
 	padding: 25px;
 	text-align: left;
+	transition: .5s;
 }
 
 menu h5{
@@ -67,10 +68,24 @@ ul {
 }
 
 header{
-	padding-top: 40px;
+	padding-top: 35px;
 	margin-left: 20%;
 }
 
+slideOut{
+	display: none;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	background-color: #888;
+	color: white;
+	padding: 10px 15px 10px 15px;
+	border-radius: 10px;
+}
+slideOut:hover{
+	background-color: #ccc;
+	cursor: pointer;
+}
 
 chatbox{
     -webkit-box-shadow: 0 0 35px -14px black;
@@ -153,7 +168,7 @@ section h1{
 }
 
 section{
-	width: 50%;
+	width: 55%;
 	margin-left: 20%;
 	margin-top: 10px;
 	margin-bottom: 10px;

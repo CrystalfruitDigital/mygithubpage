@@ -1,0 +1,37 @@
+/* Styles Mobile */
+
+@media only screen and (max-width:1000px){
+	
+	slideOut{
+		display: inherit;
+	}
+
+	header{
+		padding-top: 40px;
+	}
+
+	menu{
+		display: none;
+
+	}
+
+	chatbox{
+		display: none;
+	} 
+	
+	section{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: #fff;
+		box-shadow: 0px 5px 60px -23px black;
+		padding-bottom: 5px;
+		transition: .5s;
+	}
+
+	article{
+		color: #111;
+		width: 95%;
+	}
+}
