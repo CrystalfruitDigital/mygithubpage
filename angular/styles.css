@@ -6,24 +6,50 @@ html, body{
 	box-shadow: inset 0px 0px 40px -20px black;
 	text-align: center;
 	font-family: 'Roboto';
+	background-color: #dedede;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 5px 2px black;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 0 15px 0px black;
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
 menu{
+    -webkit-box-shadow: 0 0 35px -14px black;
+	background-color: #fff;
+	height: 100%;
 	position: fixed;
-	top: 5%;
-	left: 20px;
+	padding: 25px;
+	text-align: left;
 }
 
-menu h4{
+menu h5{
+	margin: 0;
+	padding: 0;
 	color: #888;
 	cursor: pointer;
+	transition: .5s;
+}
+menu h5:hover{
+	color: #ccc;
 }
 
 ul {
 	padding: 0;
 	margin: 0;
+	list-style-position: inside;
     list-style-type:  decimal;
 	text-align: left;
+	width: 200px;
 }
 
 header{
@@ -41,14 +67,14 @@ section{
 	margin-left: 25%;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-color: #999;
+	background-color: #fff;
 	box-shadow: 0px 5px 60px -23px black;
 	padding-bottom: 5px;
 	transition: .5s;
 }
 
 section:hover{
-	background-color: #aaa;
+	background-color: #fafaff;
 	box-shadow: 0px 1px 20px -3px #black;
 }
 
@@ -58,9 +84,9 @@ section:active{
 }
 
 article{
-	color: white;
-	width: 90%;
-	margin-left: 5%;
+	color: #111;
+	width: 95%;
+	margin-left: 2.5%;
 }
 
 article h1{
@@ -78,5 +104,33 @@ a{
 /* Section Specific */
 
 #sectionThree p {
-	font-size: 2em;
+	font-size: 1.5em;
+}
+
+.sectionThreePopTri{
+	margin-top: 5px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 20px 20px 20px;
+	border-color: transparent transparent #382d38 transparent;
+}
+
+#sectionThreePop p{
+	margin-top: -10px;
+	padding: 20px;
+	background-color: #382d38;
+	color: white;
+	font-size: 12pt;
+}
+
+.step{
+	text-align: left
+}
+
+.step pre{
+	color: white;
+}
+.step u{
+	color: white;
 }

@@ -1,12 +1,20 @@
 $(document).ready(function() {
-    hideAll();
+    hideAllStart();
 });
 
-hideAll = function() {
+hideAllStart = function() {
+    $('.section').hide();
+}
+
+hideAll = function(){
     $('.section').hide("fast");
 }
 
-toggleSection = function(section){
-	var sectionName = section;
+showAll = function() {
+    $('.section').show("fast");
+}
+
+toggleSection = function(sectionName){
+	var sectionName = sectionName;
 	$('#'+sectionName).toggle("fast");
 }

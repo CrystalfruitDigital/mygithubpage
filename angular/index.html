@@ -1,29 +1,45 @@
 <!DOCTYPE>
 <html ng-app="myApp">
+
 	<head>
+		<title>John's Angular Overview</title>
+		<link rel="icon" href="https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png"/>
+
 		<link rel="stylesheet" href="styles.css"/>
 		<link rel="stylesheet" href="animate.css"/>
 	</head>
-	<body ng-controller="MainController">
-		<header class="animated bounceInDown">
-			Welcome to John's Angular overview!
-		</header>
 
+	<body ng-controller="MainController">
 		<menu>
-			<center>
-				<h2><u>Menu</u></h2>
-				<h4 onClick="hideAll()">Hide All Sections</h4>
-				<ul>
-					<li>
-						<a href="#sectionOne">What is Angular?</a>
-					</li>
-					<li>
-						<a href="#sectionTwo">Requirements</a>
-					</li>
-				</ul>
-			</center>
+			<img src="https://lh6.googleusercontent.com/-TlY7amsfzPs/T9ZgLXXK1cI/AAAAAAABK-c/Ki-inmeYNKk/w749-h794/AngularJS-Shield-large.png" width="100px"></img>
+			<h2><u>Menu</u></h2>
+			<h5 onClick="hideAll()">Hide All Sections</h5>
+			<h5 onClick="showAll()">Show All Sections</h5>
+			<br>
+			<ul>
+				<li>
+					<a href="#a" onClick="$('#sectionOne').show('fast');">What is Angular?</a>
+				</li>
+				<li>
+					<a href="#b" onClick="$('#sectionTwo').show('fast');">Requirements</a>
+				</li>
+				<li>
+					<a href="#c" onClick="$('#sectionThree').show('fast');">Example 1: Data Binding</a>
+				</li>
+				<li>
+					<a href="#d" onClick="$('#sectionFour').show('fast');">Setting Up</a>
+				</li>
+				<li>
+					<a href="#d" onClick="$('#sectionFive').show('fast');">Import jQuery & Angular</a>
+				</li>
+			</ul>
 		</menu>
 
+		<header class="animated bounceInDown">
+			<h2><u>Welcome to John's Angular overview!</u></h2>
+		</header>
+
+		<div id="a"></div>
 		<section>
 			<article onClick="toggleSection('sectionOne');">
 				<h1>What is Angular?</h1>
@@ -38,6 +54,7 @@
 				</span>
 			</article>
 		</section>
+		<div id="b"></div>
 		<section>
 			<article onClick="toggleSection('sectionTwo');">
 				<h1>Requirements</h1>
@@ -52,6 +69,7 @@
 				</center>
 			</article>
 		</section>
+		<div id="c"></div>
 		<section>
 			<article>
 				<h1 onClick="toggleSection('sectionThree');">Example One</h1>
@@ -59,22 +77,35 @@
 					<span id="sectionThree" class="section">
 						<h3>Angular Data Binding</h3>
 						<input type="text" ng-model="ngTest" placeholder="Type here!"></input>
-						<p>{{ngTest}}</p>
+						<p>{{ngTest}}</p><img src="https://cdn3.iconfinder.com/data/icons/musthave/128/Help.png" style="width:20px;cursor:pointer" onClick="toggleSection('sectionThreePop');"></img><br>
+						<span id="sectionThreePop" class="section">
+							<div class="sectionThreePopTri"></div>
+							<p>
+								The input box is a <u>"model"</u> named "ngTest". The text paragraph that changes with the input is an "Angular binding" named "ngTest". Behind the scenes, AngularJS links the two values together and dynamically updates the binding with the model's value.
+								<br><br>
+								That was a lot of jargon but don't worry, I'll be breaking it down later.
+							</p>
+						</span>
 					</span>
 				</center>
 			</article>
 		</section>
+		<div id="d"></div>
 		<section>
 			<article>
 				<h1 onClick="toggleSection('sectionFour');">Setting Up</h1>
 				<center>
 					<span id="sectionFour" class="section">
-						<h2>Setting Up The Doc</h2>
 						<p>
 							Create a new folder and start a new project in your favorite text editor! For this walkthrough I'll be using <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a>. Feel free to use whatever you'd like!
 						</p>
+						<div class="step">
+							<h4>Step 1:</h4>
+							<p>
+								Create a new group of index.html, styles.css and main.js files in your project folder.
+							</p>
 <!-- HTML generated using hilite.me -->
-<div style="background: #272822; overflow:auto;width:auto;border:solid #ccc;border-width:.1em .1em .1em .8em;padding:.2em .6em; text-align: left; cursor: default">
+<div style="background: #111; overflow:auto;width:auto;border:solid #4c4;border-width:.1em .1em .1em .8em;padding:.2em .6em; text-align: left; cursor: default">
 	<u>< index.html ></u>
 <pre style="margin: 0; line-height: 125%">
 <span style="color: #f92672">&lt;html&gt;</span>
@@ -96,20 +127,57 @@
 <span style="color: #f92672">&lt;/html&gt;</span>
 </pre>
 </div>
+<br>
+<!-- HTML generated using hilite.me --><div style="background: #111; overflow:auto;width:auto;border:solid #44a;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+<u>< styles.css ></u>
+<pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">@import</span> <span style="color: #f92672">url(http://fonts</span><span style="color: #a6e22e">.googleapis.com</span><span style="color: #f92672">/css?family=Roboto)</span><span style="color: #f8f8f2">;</span>
+
+<span style="color: #f92672">html,</span> <span style="color: #f92672">body</span><span style="color: #f8f8f2">{</span>
+  <span style="color: #66d9ef">margin</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+  <span style="color: #66d9ef">padding</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+  <span style="color: #f8f8f2">box</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">shadow</span><span style="color: #f92672">:</span> <span style="color: #66d9ef">inset</span> <span style="color: #ae81ff">0px</span> <span style="color: #ae81ff">0px</span>  <span style="color: #ae81ff">40px</span> <span style="color: #ae81ff">-20px</span> <span style="color: #f8f8f2">black;</span>
+  <span style="color: #66d9ef">font-family</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&#39;Roboto&#39;</span><span style="color: #f8f8f2">;</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+</div>
+
 
 					</span>
 				</center>
 			</article>
 		</section>
 
+		<div id="e"></div>
 		<section>
+			<article>
+				<h1 onClick="toggleSection('sectionFive');">Import jQuery and Angular</h1>
+				<center>
+					<span id="sectionFive" class="section">
+						<p>Place jQuery into your HTML document, THEN place in Angular. Also, link your styles.css and main.js files while you're at it!</p>
+						<div class="step">
+<!-- HTML generated using hilite.me --><div style="background: #111; overflow:auto;width:auto;border:solid #4c4;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">&lt;!-- Insert in header --&gt;</span>
+<span style="color: #f92672">&lt;link</span> <span style="color: #a6e22e">rel=</span><span style="color: #e6db74">&quot;stylesheet&quot;</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;styles.css&quot;</span><span style="color: #f92672">/&gt;</span>
+
+<span style="color: #75715e">&lt;!-- Insert at bottom of body --&gt;</span>
+<span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;https://code.jquery.com/jquery-2.1.4.min.js&quot;</span><span style="color: #f92672">&gt;&lt;/script&gt;</span>
+<span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js&quot;</span><span style="color: #f92672">&gt;</span>
+<span style="color: #f92672">&lt;/script&gt;</span> 
+<span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;main.js&quot;</span><span style="color: #f92672">&gt;&lt;/script&gt;</span> 
+</pre></div>
+						</div>
+					</span>
+				</center>
+			</article>
 		</section>
+
 		<br><br><br><br><br>
 
     	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    	<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script> 
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.min.js"></script>
+
+    	<script src="SmoothScroll.js"></script>
+
     	<script src="main.js"></script>
     	<script src="ng.js"></script>
 	</body>
