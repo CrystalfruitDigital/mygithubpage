@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+html, body{
+	margin: 0;
+	padding: 0;
+	box-shadow: inset 0px 0px 40px -20px black;
+	text-align: center;
+	font-family: 'Roboto';
+}
+
+menu{
+	position: fixed;
+	top: 5%;
+	left: 20px;
+}
+
+menu h4{
+	color: #888;
+	cursor: pointer;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+    list-style-type:  decimal;
+	text-align: left;
+}
+
+header{
+	padding-top: 40px;
+	margin-bottom: 30px;
+}
+
+section h1{
+	padding-top: 20px;
+	cursor: pointer;
+}
+
+section{
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #999;
+	box-shadow: 0px 5px 60px -23px black;
+	padding-bottom: 5px;
+	transition: .5s;
+}
+
+section:hover{
+	background-color: #aaa;
+	box-shadow: 0px 1px 20px -3px #black;
+}
+
+section:active{
+	background-color: #ccc;
+	box-shadow: 0px 1px 10px 0px black;
+}
+
+article{
+	color: white;
+	width: 90%;
+	margin-left: 5%;
+}
+
+article h1{
+	color: #111;
+}
+
+input {
+	font-family: 'Roboto';
+}
+
+a{
+	color: #27a;
+}
+
+/* Section Specific */
+
+#sectionThree p {
+	font-size: 2em;
+}
