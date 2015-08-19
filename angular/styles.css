@@ -3,7 +3,6 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	box-shadow: inset 0px 0px 40px -20px black;
 	font-family: 'Roboto';
 	background-color: #dfe5ea;
 }
@@ -39,7 +38,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 menu{
-    -webkit-box-shadow: 0 0 35px -14px black;
+    -webkit-box-shadow: 0 0 35px -14px rgba(0,0,0,.5);
 	background-color: #fff;
 	height: 90%;
 	width: 15%;
@@ -116,7 +115,7 @@ chatOut:hover{
 }
 
 chatbox{
-    -webkit-box-shadow: 0 0 35px -14px black;
+    -webkit-box-shadow: 0 0 35px -14px rgba(0,0,0,.5);
 	background-color: #fff;
 	height: 90%;
 	position: fixed;
@@ -193,7 +192,7 @@ chatbox{
 	margin: 0px 0px 10px 0px;
 	padding: 10px;
 	list-style-type: none;
-	box-shadow: 0px 1px 10px -3px #122;
+	box-shadow: 0px 1px 10px -3px rgba(0,0,50,.5);
 }
 
 #messageInput{
@@ -203,7 +202,7 @@ chatbox{
 	color: white;
 	padding: 7px;
 	border-radius: 10px;
-	box-shadow: inset 0px 1px 10px 3px #122;
+	box-shadow: inset 0px 1px 10px 3px rgba(0,0,50,.5);
 
 }
 
@@ -218,19 +217,17 @@ section{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	background-color: #fff;
-	box-shadow: 0px 5px 60px -23px black;
+	box-shadow: 0px 5px 10px -3px rgba(0,0,0,.5);
 	padding-bottom: 5px;
 	transition: .5s;
 }
 
 section:hover{
-	background-color: #cdf;
-	box-shadow: 0px 1px 30px 0px #black;
+	box-shadow: 0px 1px 10px 0px rgba(0,120,250,.5);
 }
 
 section:active{
-	background-color: #ccc;
-	box-shadow: 0px 1px 10px 0px black;
+	box-shadow: 0px 1px 23px 2px rgba(0,150,250,.5);
 }
 
 article{
