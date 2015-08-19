@@ -189,10 +189,16 @@ chatbox{
 }
 
 #messages li{
+	cursor: pointer;
 	margin: 0px 0px 10px 0px;
 	padding: 10px;
 	list-style-type: none;
 	box-shadow: 0px 1px 10px -3px rgba(0,0,50,.5);
+	transition: .5s;
+}
+
+#messages li:hover{
+	background-color: red;
 }
 
 #messageInput{
