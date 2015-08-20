@@ -23,7 +23,7 @@
 				<h5 onClick="showAll()">Show All Sections</h5>
 			<br>
 
-			<a href="#a" class="sectMenu">Section I: Setting Up</a>		
+			<a href="#a" class="sectMenu">Section I: Basic Setup</a>		
 			<ul>
 				<li>
 					<a href="#a" onClick="$('#sectionOne').show('fast');">What is Angular?</a>
@@ -40,8 +40,12 @@
 				<li>
 					<a href="#d" onClick="$('#sectionFive').show('fast');">Import jQuery & Angular</a>
 				</li>
+			</ul>
+			<br>
+			<a href="#f" class="sectMenu">Section II: Angular Setup</a>		
+			<ul>
 				<li>
-					<a href="#d" onClick="$('#sectionSix').show('fast');">Getting Started</a>
+					<a href="#f" onClick="$('#sectionSix').show('fast');">Getting Started</a>
 				</li>
 			</ul>
 		</menu>
@@ -74,8 +78,13 @@
 			</div>
 		</chatbox>
 
-		<header class="animated bounceInDown">
+		<header class="animated bounceInDown" onClick="toggleSection('sectionZero');">
 			<h2><u>Welcome to John's Angular overview!</u></h2>
+			<span id="sectionZero" class="section">
+				<p>
+					This is a walkthrough tutorial on how to set up and understand the basics of AngularJS.
+				</p>
+			</span>
 		</header>
 		
 		<div id="web-plug" onClick="window.open('http://www.jn23.me')">
@@ -188,6 +197,13 @@
 </pre></div>
 </div>
 
+<br>
+<!-- HTML generated using hilite.me -->
+<div style="text-align: left; background: #111; overflow:auto;width:auto;border:solid #c44;border-width:.1em .1em .1em .8em;padding:.2em .6em;color: white;"><u>< main.js ></u>
+<pre style="margin: 0; line-height: 125%"><span style="color: gray">// Angular code goes here...</span>
+</pre></div>
+
+
 
 					</span>
 				</center>
@@ -219,6 +235,10 @@
 				</center>
 			</article>
 		</section>
+		<br><br>
+		<div class="sectionHeader">
+			<h3><u>Section II: Getting Started with Angular</u></h3>Feel free to skip this section if you know how to set up an Angular project already
+		</div>
 
 		<div id="f"></div>
 		<section>
@@ -227,6 +247,36 @@
 				<center>
 					<span id="sectionSix" class="section">
 						<p>Now that everything is in place, let's turn this project into an Angular app!</p>
+						<div class="step">
+<!-- HTML generated using hilite.me --><div style="background: #111; overflow:auto;width:auto;border:solid #4c4;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #75715e">&lt;!-- Add &quot;ng-app=&#39;yourAppName&#39;&quot; --&gt;</span>
+<span style="color: #f92672">&lt;html</span> <span style="color: #a6e22e">ng-app=</span><span style="color: #e6db74">&quot;myApp&quot;</span><span style="color: #f92672">&gt;</span>
+
+<span style="color: #75715e">&lt;!-- Add &quot;ng-controller=&#39;ctrlName&#39;&quot; --&gt;</span>
+<span style="color: #f92672">&lt;body</span> <span style="color: #a6e22e">ng-controller=</span><span style="color: #e6db74">&quot;MainController&quot;</span><span style="color: #f92672">&gt;</span>
+</pre></div>
+						</div>
+						<p>
+							- Using the ng-app identifier, we can declare the Angular.js app that the .html file will be linked to.
+							<br>
+							- Using the ng-controller identifier, we can declare the section of the .html file that will use Angular.
+						</p>
+						<br><br>
+						<div class="step">
+							<!-- HTML generated using hilite.me --><div style="background: #111; overflow:auto;width:auto;border:solid #c44;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">var</span> <span style="color: #a6e22e">app</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">angular</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">module</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;myApp&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">[]);</span>
+<span style="color: #a6e22e">app</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">controller</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;MainController&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;$scope&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">$scope</span><span style="color: #f8f8f2">){</span>
+	<span style="color: #75715e">// Insert code here!</span>
+<span style="color: #f8f8f2">}]);</span>
+</pre></div>
+						</div>
+						<p>
+							- Let's get into our Javascript file now - we'll be declaring a new variable (in this case, 'app') and we'll be using it to initialize a new angular module (in this case, 'myApp')
+						<br><br>
+							- The square brackets that are included in the parameters function as space to insert Angular add-ons, such as Angular resource and such.
+						<br><br>
+							- We call the "controller" function on our new 'app' variable, which links to the controller with the parameter name in the .html file (in this case, 'MainController')
+						<br><br>
+							- '$scope' is what Angular uses to define objects within the controller's domain - basically anything within the domain (defined by tags that start with 'ng-' such as 'ng-model' and 'ng-binding') can be controlled using $scope.objectName
+						</p>
 					</span>
 				</center>
 			</article>

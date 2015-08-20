@@ -92,6 +92,8 @@ removeMessage = function(key){
 };
 
 removeAll = function(){
-	messagesRef.remove();
-	$('#messages').empty();
+	if(window.confirm("Are you sure you want to delete the entire chat?")){
+		messagesRef.remove();
+		$('#messages').empty();
+	}
 };

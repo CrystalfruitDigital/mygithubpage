@@ -48,6 +48,7 @@ menu{
 	text-align: left;
 	font-size: 14pt;
 	transition: .5s;
+    overflow: scroll;
 }
 
 menu h5{
@@ -61,7 +62,19 @@ menu h5:hover{
 	color: #ccc;
 }
 
-menu ul {
+menu::-webkit-scrollbar {
+	width: 0px;
+}
+ 
+menu::-webkit-scrollbar-track {
+	opacity: 0;
+}
+ 
+menu::-webkit-scrollbar-thumb {
+	opacity: 0;
+}
+
+menu ol {
 	padding: 0;
 	margin: 0;
 	list-style-position: inside;
@@ -244,6 +257,7 @@ article{
 
 article h1{
 	color: #111;
+	font-size: 1.5em;
 }
 
 input {
@@ -278,7 +292,8 @@ a{
 }
 
 .step{
-	text-align: left
+	text-align: left;
+	width: 100%;
 }
 
 .step pre{
